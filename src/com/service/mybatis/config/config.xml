@@ -6,7 +6,7 @@
  	<typeAliases>
  		<typeAlias type="com.service.vo.Users" alias="users"/>
  		<typeAlias type="com.service.vo.Contents" alias="contents"/>
-<!--  		<typeAlias type="com.service.vo.Users_Category" alias="users_category"/>
+<!--  	<typeAlias type="com.service.vo.Users_Category" alias="users_category"/>
  		<typeAlias type="com.service.vo.Board" alias="board"/>
  		<typeAlias type="com.service.vo.Category" alias="category"/>
  		<typeAlias type="com.service.vo.Comments" alias="comments"/>
