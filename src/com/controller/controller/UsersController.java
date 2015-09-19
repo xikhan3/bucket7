@@ -40,7 +40,7 @@ public class UsersController {
 	         e.printStackTrace();
 	      }
 	      MultipartFile file = uc.getUser_image();
-	      String dir = "C:\\workspace\\99.bucketlist\\web\\img\\users\\";
+	      String dir = "C:\\spring\\99.bucketlist\\web\\img\\users\\";
 	      MyUtil.saveFile(file, dir);
 	      return mv;
 	   }
@@ -67,11 +67,11 @@ public class UsersController {
 	public ModelAndView updateimpl(UpdateUsersCommand uuc) throws Exception{
 		ModelAndView mv = new ModelAndView("main");
 		Users users = null;
-		MultipartFile file = uuc.getNew_user_image(); //null�̸� ����������ϰڴ�.
+		MultipartFile file = uuc.getNew_user_image(); 
 		if(file == null || file.getOriginalFilename().equals("")){ //file���� null�� �������� spring���� ������� ���´�
 			users = new Users(uuc.getUser_id(), uuc.getUser_password(), uuc.getUser_name(), uuc.getUser_email(), uuc.getUser_image(), new Date(), true);
 		}else{
-			String dir = "C:\\workspace\\99.bucketlist\\web\\img\\";
+			String dir = "C:\\spring\\99.bucketlist\\web\\img\\";
 			MyUtil.saveFile(file, dir);
 			users = new Users(uuc.getUser_id(), uuc.getUser_password(), uuc.getUser_name(), uuc.getUser_email(), uuc.getNew_user_image().getOriginalFilename(), new Date(), true);
 		}

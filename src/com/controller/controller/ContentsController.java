@@ -46,7 +46,7 @@ public class ContentsController {
 	      MultipartFile file2 = uc.getContents_image2();
 	      MultipartFile file3 = uc.getContents_image3();
 	      
-	      String dir = "C:\\workspace\\99.bucketlist\\web\\img\\contents\\";
+	      String dir = "C:\\spring\\99.bucketlist\\web\\img\\contents\\";
 	      MyUtil.saveFile(file1, dir);
 	      MyUtil.saveFile(file2, dir);
 	      MyUtil.saveFile(file3, dir);
@@ -114,7 +114,7 @@ public class ContentsController {
 					); 
 			System.out.println("전에1 : "+contents);
 		}else{
-			String dir = "C:\\workspace\\99.bucketlist\\web\\img\\contents\\";
+			String dir = "C:\\spring\\99.bucketlist\\web\\img\\contents\\";
 			MyUtil.saveFile(file1, dir);
 			MyUtil.saveFile(file2, dir);
 			MyUtil.saveFile(file3, dir);
