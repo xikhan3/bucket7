@@ -25,37 +25,52 @@ function usersregister(f) {
 </head>
 <body>
 
-<div class="container">
+	<div class="container">
 
-<div class="page-header">
-    <h1>Simple Join</h1>
-</div>
+		<div class="page-header">
+			<h1>Simple Join</h1>
+		</div>
 
-<!-- Simple Login - START -->
-<form class="col-md-12" enctype="multipart/form-data">
+		<!-- Simple Login - START -->
+		<form class="form-inline" enctype="multipart/form-data">
 
-    <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="ID" name="user_id">
-    </div>
-    <div class="form-group">
-        <input type="password" class="form-control input-lg" placeholder="Password" name="user_password">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="Name" name="user_name">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="Email" name="user_email">
-    </div>
-    <div class="form-group">
-    	<input type="file" class="form-control input-lg" placeholder="Image" name="user_image">
-    </div>
-    <div class="form-group">
-        <button class="btn btn-primary btn-lg btn-block" onclick="usersregister(this.form)">Sign In</button>
-        <button class="btn btn-primary btn-lg btn-block" onclick="self.close()">Cancel</button>
-        
-    </div>
-</form>
-<!-- Simple Login - END -->
+			<div class="form-group">
+				<label class="sr-only" for="user_id">user_id</label> <input
+					type="text" class="form-control" placeholder="ID" name="user_id">
+			</div>
+			<br>
+			<div class="form-group">
+				<label class="sr-only" for="user_password">user_password</label> <input
+					type="password" class="form-control" placeholder="Password"
+					name="user_password">
+			</div>
+			<br>
+			<div class="form-group">
+				<label class="sr-only" for="user_name">user_name</label> <input
+					type="text" class="form-control" placeholder="Name"
+					name="user_name">
+			</div>
+			<br>
+			<div class="form-group">
+				<label class="sr-only" for="user_email">user_email</label> <input
+					type="text" class="form-control" placeholder="Email"
+					name="user_email">
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="exampleInputFile">사진 등록</label> <input type="file"
+					name="user_image"> 
+			</div> <br>
+			<div class="form-group">
+				<button class="btn btn-primary"
+					onclick="usersregister(this.form)">Sign In</button>
+				<button class="btn btn-primary"
+					onclick="self.close()">Cancel</button>
+
+			</div>
+		</form>
+	</div>
+	<!-- Simple Login - END -->
 
 </body>
 </html>

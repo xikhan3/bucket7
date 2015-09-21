@@ -86,4 +86,11 @@ public class MainController {
 		return mv;
 	}
 	
+	@RequestMapping("/mypage.bk")
+	public ModelAndView mypage(UsersCommand uc){
+		ModelAndView mv = new ModelAndView("main");
+	
+		return mv;
+	}
+	
 }

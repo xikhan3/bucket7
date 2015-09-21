@@ -43,8 +43,7 @@ public class UsersController {
 		}
 		System.out.println("JOIN2");
 		MultipartFile file = uc.getUser_image();
-		//String dir = "C:\\spring\\99.bucketlist\\web\\img\\users\\";
-		String dir = "C:\\spring\\99.bucketlist\\web\\img\\";
+		String dir = "C:\\spring\\99.bucketlist\\web\\img\\users\\";
 		MyUtil.saveFile(file, dir);
 		System.out.println("JOIN3");
 		return mv;
